@@ -42,7 +42,7 @@ export default {
     height: 500px;
     background-color: $light-bg;
     .ms_card-strengths {
-        height: 300px;
+
         background-color: white;
         border-radius: 8px;
         i {
