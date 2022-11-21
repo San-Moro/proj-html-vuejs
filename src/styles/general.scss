@@ -1,0 +1,61 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/@fontsource/poppins/index.css";
+@import "../node_modules/@fontsource/poppins/900.css";
+@import "../node_modules/@fontsource/poppins/600.css";
+@import "./partials/variables";
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ms_container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.ms_btn {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.ms_main-btn {
+    background-color: $color-main;
+    padding: 10px 32px;
+}
+
+.ms_outline-btn {
+    border: 2px solid $color-main;
+    background-color: transparent;
+    padding: 8px 32px;
+}
+
