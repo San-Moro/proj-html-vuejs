@@ -10,9 +10,9 @@ export default {
             <div class="row align-items-center">
                 <div class="col-6">
                     <div class="ms_heading">
-                        <h4>about the network</h4>
-                        <h2>The Company</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur a repellat quaerat asperiores minus totam beatae.</p>
+                        <h4 class="pt-5">newsletter</h4>
+                        <h2 class="py-4">know first</h2>
+                        <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit totam dolore neque?</p>
                     </div>
                 </div>
                 <div class="col-6">
@@ -34,6 +34,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
 .ms_newsletter {
     width: 100%;
     height: 400px;
@@ -42,11 +43,17 @@ export default {
     background-position: center;
 
     .ms_small-container {
-        width: 60%;
+        width: 50%;
         margin: 0 auto;
         .ms_heading {
             color: white;
-
+        }
+        input {
+            opacity: 0.5;
+            border: none;
+        }
+        label {
+            color: $secondary-text;
         }
     }
 }
