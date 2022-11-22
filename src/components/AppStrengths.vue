@@ -57,6 +57,10 @@ export default {
         p {
             color: $secondary-text;
         }
+
+        &:hover {
+            transform: translateY(-15px);
+        }
         
     }
 }

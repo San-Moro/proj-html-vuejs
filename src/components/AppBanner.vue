@@ -39,11 +39,18 @@ export default {
             <div class="ms_header-banner d-flex align-items-center">
                 <div class="ms_container">
                     <div class="row">
-                        <div class="col-4">
-                            Hours
+                        <div class="col-4 d-flex flex-row align-items-center">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Open Hours: Mon-Sat - 9:00-18:00</span>
                         </div>
-                        <div class="col-8 d-flex justify-content-end">
-                            contacts
+                        <div class="col-8 d-flex justify-content-end align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <span><a href="">+1 (305) 1234-5678</a></span>
+                            <i class="fa-solid fa-envelope ps-3"></i>
+                            <span><a href="">hello@example.com</a></span>
+                            <a href=""><i class="fa-brands fa-facebook-f ps-3"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter px-4"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -58,12 +65,15 @@ export default {
                     </div>
                     <div class="col-10 d-flex justify-content-end">
                         <nav class="d-flex py-3">
-                            <div class="ms_main-menu">
+                            <div class="ms_main-menu d-flex">
                                 <ul class="d-flex flex-row align-items-center">
                                     <li v-for="(link,index) in links" :key="index">
                                         <a href=""> {{link.title}}</a>
                                     </li>
                                 </ul>
+                                <div class="ms_button">
+                                    <button class="ms_btn ms_main-btn">get in touch</button>
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -76,7 +86,6 @@ export default {
                 <div class="ms_button">
                     <button class="ms_btn ms_main-btn mx-3">get in touch</button>
                     <button class="ms_btn ms_outline-btn mx-3">read more</button>
-
                 </div>
             </div>
         </section>
@@ -106,7 +115,15 @@ export default {
             width: 100%;
             height: 50px;
             background-color: #21333e;
-            color: white;
+            color: $text-dark-bg;
+            span {
+                font-size: 14px;
+                font-weight: 300;
+                padding: 0 10px;
+            }
+            a {
+                color: $text-dark-bg;
+            }
         }
         .ms_logo {
             img {

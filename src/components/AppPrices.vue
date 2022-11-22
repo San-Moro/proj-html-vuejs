@@ -143,6 +143,9 @@ export default {
                     }
                 }
             }
+            &:hover {
+                transform: scale(0.95)
+            }
         }
         .ms_card-popular {
             transform: scale(1.05);

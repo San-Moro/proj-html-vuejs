@@ -2,6 +2,7 @@
 @import "../node_modules/@fontsource/poppins/index.css";
 @import "../node_modules/@fontsource/poppins/900.css";
 @import "../node_modules/@fontsource/poppins/600.css";
+@import "../node_modules/@fontsource/poppins/300.css";
 @import "./partials/variables";
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -55,12 +56,18 @@ h4 {
 .ms_main-btn {
     background-color: $color-main;
     padding: 10px 32px;
+    &:hover {
+        background-color: $title-section;
+    }
 }
 
 .ms_outline-btn {
-    border: 2px solid $color-main;
+    border: 1.5px solid $color-main;
     background-color: transparent;
     padding: 8px 32px;
+    &:hover {
+        background-color: $color-main;
+    }
 }
 
 .ms_heading {

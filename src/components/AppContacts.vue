@@ -122,6 +122,9 @@ export default {
         }
         .ms_outline-btn {
             color: $color-main;
+            &:hover {
+                color: white;
+            }
         }
     }
 }
