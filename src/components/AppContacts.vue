@@ -9,10 +9,10 @@ export default {
         <div class="ms_container">
             <div class="row align-items-center">
                 <div class="col-8 pe-5">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="ms_heading">
                             <h4 class="pt-5">send a message</h4>
-                            <h2 class="py-4">Get in Touch</h2>
+                            <h2 class="py-4">Get in <span>Touch</span></h2>
                             <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
@@ -91,6 +91,17 @@ export default {
 @use "../styles/partials/variables" as *;
 .ms_contacts {
     width: 100%;
+    .ms_heading {
+        :nth-child(2) {
+            color: $title-section;
+            span {
+                color: $color-main;
+                padding: 0 15px;
+                background-color: rgba($color: $color-main, $alpha: 0.2);
+                border-radius: 8px;
+            }
+        }
+    }
     .ms_form-contacts {
         input,
         select,

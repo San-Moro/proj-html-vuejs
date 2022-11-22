@@ -11,7 +11,7 @@ export default {
                 <div class="col-6">
                     <div class="ms_heading">
                         <h4 class="pt-5">newsletter</h4>
-                        <h2 class="py-4">know first</h2>
+                        <h2 class="py-4"><span>Know</span> First</h2>
                         <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit totam dolore neque?</p>
                     </div>
                 </div>
@@ -47,6 +47,11 @@ export default {
         margin: 0 auto;
         .ms_heading {
             color: white;
+            span {
+                padding: 0 15px;
+                background-color: rgba($color: $color-main, $alpha: 0.2);
+                border-radius: 8px;
+            }
         }
         input {
             opacity: 0.5;

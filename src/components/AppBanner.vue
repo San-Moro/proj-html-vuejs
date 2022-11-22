@@ -81,7 +81,7 @@ export default {
             </div>
 
             <div class="ms_banner-cta d-flex flex-column justify-content-center align-items-center">
-                <h1>Lead - Customer</h1>
+                <h1>Lead - <span>Customer</span></h1>
                 <p class="py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos cupiditate consequatur consectetur. Doloribus possimus temporibus dolor saepe molestias!</p>
                 <div class="ms_button">
                     <button class="ms_btn ms_main-btn mx-3">get in touch</button>
@@ -154,6 +154,11 @@ export default {
             h1 {
                 font-size: 60px;
                 font-weight: 900;
+                span {
+                padding: 0 15px;
+                background-color: rgba($color: $color-main, $alpha: 0.2);
+                border-radius: 8px;
+                }
             }
             p {
                 color: #c0c3d0;

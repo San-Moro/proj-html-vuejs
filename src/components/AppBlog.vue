@@ -9,7 +9,7 @@ export default {
         <div class="ms_container">
             <div class="ms_heading">
                 <h4 class="pt-5">our editorial content</h4>
-                <h2 class="py-4">Latest News</h2>
+                <h2 class="py-4">Latest <span>News</span></h2>
                 <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit asperiores minus totam.</p>
             </div>
             <div class="row row-cols-3 pb-5">
@@ -55,11 +55,24 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
 .ms_blog {
     width: 100%;
     img {
         opacity: 0.4;
     }
+    .ms_heading {
+        :nth-child(2) {
+            color: $title-section;
+            span {
+                color: $color-main;
+                padding: 0 15px;
+                background-color: rgba($color: $color-main, $alpha: 0.2);
+                border-radius: 8px;
+            }
+        }
+    }
+    
     .card {
         border: none;
         .ms_card-blog {

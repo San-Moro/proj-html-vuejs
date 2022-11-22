@@ -145,9 +145,12 @@ export default {
             </div>
         </div>
         <div class="ms_footer-bottom d-flex">
-            <div class="ms_container d-flex justify-content-between align-items-center">
+            <div class="ms_container ms_text-footer-bt d-flex justify-content-between align-items-center">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p><i class="fa-regular fa-copyright"></i>2020 NEXGEN is Lorem Ipsum by</p>
+                <p>
+                    <i class="fa-regular fa-copyright"></i> 
+                    <span>2020 NEXGEN is Lorem Ipsum by</span>
+                </p>
             </div>
             <div class="ms_icon-go-back-up d-flex justify-content-end align-items-center">
                 <i class="fa-solid fa-arrow-up p-2 me-3"></i>
@@ -203,12 +206,21 @@ export default {
         }
     }
     .ms_footer-bottom {
-        background-color: #0d0d11;
         height: 80px;
+        background-color: #0d0d11;
         font-size: 12px;
         color: $text-dark-bg;
-        p {
-            margin-bottom: 0;
+        .ms_text-footer-bt {
+            p {
+                margin-bottom: 0;
+            }
+            p:last-child {
+                &::after {
+                    content: " Codings";
+                    color: $color-main;
+                }
+            }
+
         }
         .ms_icon-go-back-up {
             i {
